@@ -11,7 +11,9 @@ docker run --name $NAME \
 	-e MYSQL_DATABASE=$MYSQL_DATABASE \
 	-e MYSQL_USER=$MYSQL_USER \
 	-e MYSQL_PASSWORD=$MYSQL_PASSWORD \
-	-d -P $CONTAINER
+	-d -P $CONTAINER \
+	--character-set-server=utf8 \
+	--collation-server=utf8_general_ci
 
 docker ps
 #docker ps -a
