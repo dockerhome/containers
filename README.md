@@ -1,6 +1,6 @@
 <p align="center">
 
-![ docker ](https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_(container_engine)_logo.png)
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_(container_engine)_logo.png">
 
 </p>
 
