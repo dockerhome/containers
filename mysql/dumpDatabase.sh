@@ -2,9 +2,9 @@
 
 source .config
 
-[ ! -d $DUMP_PATH/$NAME ] && mkdir -p $DUMP_PATH/$NAME
+[ ! -d $DUMP_PATH ] && mkdir -p $DUMP_PATH
 
 docker exec $NAME \
-	 sh -c 'exec mysqldump $MYSQL_DATABASE -uroot -p"$MYSQL_ROOT_PASSWORD"' > $DUMP_PATH/$NAME/$MYSQL_DATABASE.sql
+	 sh -c 'exec mysqldump $MYSQL_DATABASE -uroot -p"$MYSQL_ROOT_PASSWORD"' > $DUMP_FILE
 
 exit 0
