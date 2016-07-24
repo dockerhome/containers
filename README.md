@@ -17,4 +17,4 @@ Thanks!
 
 ## Credits
 
-### Mysql Restore script: http://depressiverobot.com/2015/02/19/mysql-dump-docker.html
+> Found the mysql restore script at [http://depressiverobot.com/2015/02/19/mysql-dump-docker.html](http://depressiverobot.com/2015/02/19/mysql-dump-docker.html)
