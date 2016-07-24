@@ -5,6 +5,8 @@ source .config
 docker stop $NAME
 docker rm $NAME
 
+[ ! -d $LOCAL_FOLDER/$NAME ] && mkdir -p $LOCAL_FOLDER/$NAME
+
 docker run --name $NAME \
 	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
 	--link $DB_SERVER_NAME:mysql \
