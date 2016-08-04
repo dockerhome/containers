@@ -18,4 +18,9 @@ docker run --name $NAME \
 docker ps
 #docker ps -a
 
+# @TODO
+#
+# 1. Colocar IP desse contianer no arquivo hosts /etc/hosts
+
+
 exit 0
