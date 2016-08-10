@@ -20,7 +20,11 @@ docker ps
 
 # @TODO
 #
-# 1. Colocar IP desse contianer no arquivo hosts /etc/hosts
+# 1. Colocar IP desse contianer no arquivo hosts /etc/hosts com o nome do container
+#
+# 2. Definir função inicial para ler um arquivos como parametro --config=.config_xyz ou o padrão '.config'
+#
+#
 
 
 exit 0
