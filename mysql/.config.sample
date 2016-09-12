@@ -14,4 +14,5 @@ MYSQL_USER=user
 MYSQL_PASSWORD=pass
 
 DUMP_PATH=/path/where/dump/file/should/be
-DUMP_FILE=$DUMP_PATH/$MYSQL_DATABASE.sql
+DUMP_FILE=excelguru.bak.sql
+DUMP_FULLFILE=$DUMP_PATH/$DUMP_FILE
