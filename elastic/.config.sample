@@ -1,0 +1,12 @@
+#
+# Config file for Elasticsearch containers
+#
+
+# makeContainer: Elasticsearch
+CONTAINER=elasticsearch
+NAME=server_name
+LOCAL_FOLDER=local_folder_to_keep_files
+CONFIG_FOLDER=config
+DATA_FOLDER=esdata
+NODE_NAME=node_name
+CLUSTER_NAME=cluster_name
