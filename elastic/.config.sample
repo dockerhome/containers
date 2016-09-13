@@ -10,3 +10,6 @@ CONFIG_FOLDER=config
 DATA_FOLDER=esdata
 NODE_NAME=node_name
 CLUSTER_NAME=cluster_name
+LOCAL_PORT=9200
+ES_PORT=9200
+

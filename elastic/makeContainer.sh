@@ -6,6 +6,7 @@ docker stop $NAME
 docker rm $NAME
 
 docker run --name $NAME \
+	-p $LOCAL_PORT:$ES_PORT \
 	-v $LOCAL_FOLDER/$DATA_FOLDER:/usr/share/elasticsearch/data \
 	-d $CONTAINER \
 	-Des.node.name=$NODE_NAME \
