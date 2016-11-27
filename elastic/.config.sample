@@ -8,7 +8,7 @@ CONTAINER=evertramos/elastic:5.0
 # Description
 NAME=elastic5
 NODE_NAME=es_local_001
-CLUSTER_NAME=es_local_001_01
+#CLUSTER_NAME=es_local_001_01 # Not implemented yet
 
 # IP
 LOCAL_IP=
