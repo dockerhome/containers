@@ -7,7 +7,15 @@ CONTAINER=elasticsearch
 
 NAME=srv-es-test
 NODE_NAME=es_test
+CLUSTER_NAME=cluster_name
 
 LOCAL_FOLDER=/home/evert/dockerhome/data/es
 CONTAINER_FOLDER=/usr/share/elasicsearch/data
+
+CONFIG_FOLDER=config
+DATA_FOLDER=esdata
+
+
+LOCAL_PORT=9200
+ES_PORT=9200
 
