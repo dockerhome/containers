@@ -3,18 +3,21 @@
 #
 
 # Container
-CONTAINER=evertramos/elastic-files
+CONTAINER=evertramos/elastic:5.0
 
 # Description
 NAME=elastic5
 NODE_NAME=es_local_001
 CLUSTER_NAME=es_local_001_01
 
+# IP
+LOCAL_IP=
+
 # Ports
 LOCAL_PORT=9200
-ES_PORT=9200
+CONTAINER_PORT=9200
 LOCAL_PORT_2=9300
-ES_PORT_2=9300
+CONTAINER_PORT_2=9300
 
 # Data
 LOCAL_FOLDER=~/dockerhome/data/elastic
