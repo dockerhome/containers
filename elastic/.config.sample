@@ -1,0 +1,13 @@
+#
+# Arquivo de configuracao para container
+#
+
+# makeContainer: Elasticsearch
+CONTAINER=elasticsearch
+
+NAME=srv-es-test
+NODE_NAME=es_test
+
+LOCAL_FOLDER=/home/evert/dockerhome/data/es
+CONTAINER_FOLDER=/usr/share/elasicsearch/data
+
