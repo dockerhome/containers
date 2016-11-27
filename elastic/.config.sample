@@ -1,21 +1,26 @@
 #
-# Arquivo de configuracao para container
+# Config file for Elasticsearch containers
 #
 
-# makeContainer: Elasticsearch
-CONTAINER=elasticsearch
+# Container
+CONTAINER=evertramos/elastic-files
 
-NAME=srv-es-test
-NODE_NAME=es_test
-CLUSTER_NAME=cluster_name
+# Description
+NAME=elastic5
+NODE_NAME=es_local_001
+CLUSTER_NAME=es_local_001_01
 
-LOCAL_FOLDER=/home/evert/dockerhome/data/es
-CONTAINER_FOLDER=/usr/share/elasicsearch/data
-
-CONFIG_FOLDER=config
-DATA_FOLDER=esdata
-
-
+# Ports
 LOCAL_PORT=9200
 ES_PORT=9200
+LOCAL_PORT_2=9300
+ES_PORT_2=9300
+
+# Data
+LOCAL_FOLDER=~/dockerhome/data/elastic
+CONTAINER_FOLDER=/usr/share/elasicsearch/data
+
+# Settings
+CONFIG_FOLDER=
+READ_ONLY=false
 
