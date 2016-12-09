@@ -1,0 +1,24 @@
+#
+# Config file for containers
+#
+
+# makeContainer : VSFTP
+NAME=srv-ftp-teste
+LOCAL_FOLDER=/path/to/your/local/data
+CONTAINER=evertramos/vsftpd
+
+LOCAL_IP=your_ip_address
+LOCAL_PORT=21
+CONTAINER_PORT=21
+
+LOCAL_PORT2=20
+CONTAINER_PORT2=20
+
+FTP_USER=username
+FTP_PASSWORD=password
+FTP_UID=1000
+FTP_GID=1000
+FTP_PATH=/home/$FTP_USER
+
+#FTP_CONF=conf/vsftpd.conf
+
