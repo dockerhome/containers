@@ -12,6 +12,7 @@ docker rm $NAME
 
 #docker run -d --read-only --name $NAME \
 docker run -d --name $NAME \
+    --restart always \
 	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
 	-p $LOCAL_IP:$LOCAL_PORT:$CONTAINER_PORT \
 	-p $LOCAL_IP:$LOCAL_PORT_2:$CONTAINER_PORT_2 \
