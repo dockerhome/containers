@@ -8,6 +8,7 @@ docker rm $NAME
 [ ! -d $LOCAL_FOLDER/$NAME ] && mkdir -p $LOCAL_FOLDER/$NAME
 
 docker run --name $NAME \
+    --restart always \
 	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
 	--link $DB_SERVER_NAME:mysql \
 	-e WORDPRESS_DB_USER=$MYSQL_USER \

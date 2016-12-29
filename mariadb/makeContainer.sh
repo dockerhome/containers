@@ -6,6 +6,7 @@ docker stop $NAME
 docker rm $NAME
 
 docker run --name $NAME \
+    --restart always \
 	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
 	-v $CONF_LOCAL:$CONF_SERVER \
 	-p $LOCAL_IP:$LOCAL_PORT:$CONTAINER_PORT \

@@ -6,6 +6,7 @@ docker stop $NAME
 docker rm $NAME
 
 docker run --name $NAME \
+    --restart always \
 	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
 	-p $LOCAL_IP:$LOCAL_PORT:$CONTAINER_PORT \
 	-e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \

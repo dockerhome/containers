@@ -8,6 +8,7 @@ docker rm $NAME
 [ ! -d $LOCAL_FOLDER/$NAME ] && mkdir -p $LOCAL_FOLDER/$NAME
 
 docker run --name $NAME \
+    --restart always \
 	-v $LOCAL_FOLDER/$NAME:$FTP_PATH \
 	-e FTP_USER=$FTP_USER \
 	-e FTP_PASSWORD=$FTP_PASSWORD \
