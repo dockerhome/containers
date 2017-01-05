@@ -1,3 +1,2 @@
-.config
-.config_*
-createUser.sh.insideMake
+!.config-sample
+.config*
