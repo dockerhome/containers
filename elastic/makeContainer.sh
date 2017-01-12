@@ -61,8 +61,15 @@ fi
 #    RUN_SCRIPT="$RUN_SCRIPT -e ES_JAVA_OPTS='\"-Xms1g -Xmx1g\"'"
 #fi
 
+# Network
+if [ ! -z $NETWORK ]; then
+    RUN_SCRIPT="$RUN_SCRIPT --network=$NETWORK"
+else
+    RUN_SCRIPT="$RUN_SCRIPT -P"
+fi
+
 # Container name
-RUN_SCRIPT="$RUN_SCRIPT -P $CONTAINER"
+RUN_SCRIPT="$RUN_SCRIPT $CONTAINER"
 
 # Has any extra configuration parameters?
 if [ ! -z "$EXTRA_CONFIG" ]; then
@@ -75,20 +82,6 @@ echo $RUN_SCRIPT
 docker stop $NAME
 docker rm $NAME
 docker run $RUN_SCRIPT
-
-#docker run -d --read-only --name $NAME \
-#docker run -d --name $NAME \
-#	--restart always \
-#	-v $LOCAL_FOLDER/$NAME:$CONTAINER_FOLDER \
-#	-p $LOCAL_IP:$LOCAL_PORT:$CONTAINER_PORT \
-#	-p $LOCAL_IP:$LOCAL_PORT_2:$CONTAINER_PORT_2 \
-#	-P $CONTAINER \
-#	-E node.name=$NODE_NAME
-
-
-#	-v $CONFIG_FOLDER:$CONTAINER_CONFIG_FOLDER \
-#	-e ES_JAVA_OPTS="-Xms1g -Xmx1g" \
-
 docker ps
 
 exit 0

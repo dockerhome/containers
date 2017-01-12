@@ -11,6 +11,7 @@ NAME=your_container_name
 #
 # IP - If you set localost or 127.0.0.1 the port will not be public
 #
+#LOCAL_IP=your_ip_address
 LOCAL_IP=127.0.0.1
 
 #
@@ -34,6 +35,9 @@ declare -A FOLDER_DATA
 # Ex: If you want to bind the local folder '/home/user/backup' to '/mount/backup' in the container:
 # FOLDER_DATA[/mount/backup]=/home/user/backup
 #FOLDER_DATA[]=
+FOLDER_DATA[/usr/share/elasticsearch/data:ro]=/your/local/data/folder
+#FOLDER_DATA[/usr/share/elasticsearch/logs]=/your/local/log/folder
+#FOLDER_DATA[/usr/share/elasticsearch/config:ro]=~/dockerhome/containers/elastic/config
 
 #
 # Settings
@@ -41,3 +45,7 @@ declare -A FOLDER_DATA
 
 # Restart - possible values are: no, on-failure[:max-retry], always, unless-stopped
 RESTART=always
+
+# Network - you need to create a network to use the network option below
+NETWORK=
+
