@@ -1,0 +1,43 @@
+#
+# Config file for Elasticsearch containers
+#
+
+# Container
+CONTAINER=elasticsearch
+
+# Description
+NAME=your_container_name
+
+#
+# IP - If you set localost or 127.0.0.1 the port will not be public
+#
+LOCAL_IP=127.0.0.1
+
+#
+# Ports
+#
+# OPEN_PORTS[container_port]=local_port
+#
+# Ex: If you want to bind the local port 8080 to port 80 in container you use:
+# OPEN_PORTS[80]=8080
+OPEN_PORTS[9200]=9200
+OPEN_PORTS[9300]=9300
+
+#
+# Volumes
+#
+# DO NOT CHANGE THIS LINE BELOW:
+declare -A FOLDER_DATA
+#
+# FOLDER_DATA[container_folder]=local_folder
+#
+# Ex: If you want to bind the local folder '/home/user/backup' to '/mount/backup' in the container:
+# FOLDER_DATA[/mount/backup]=/home/user/backup
+#FOLDER_DATA[]=
+
+#
+# Settings
+#
+
+# Restart - possible values are: no, on-failure[:max-retry], always, unless-stopped
+RESTART=always
