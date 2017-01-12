@@ -1,0 +1,16 @@
+network.host: 0.0.0.0
+#network.host: 127.0.0.1
+
+# this value is required because we set "network.host"
+# be sure to modify it appropriately for a production cluster deployment
+discovery.zen.minimum_master_nodes: 1
+
+# White List for Reindex
+#reindex.remote.whitelist: ["node002.domain.com:9200"]
+
+# Path Repo for snapshot
+#path.repo: ["/mount/backups/", "/mount/long_term_backup"]
+
+# x-pack Security Rules
+#xpack.security.transport.filter.allow: [ localhost, "192.168.0.1" ]
+#xpack.security.transport.filter.deny: _all
