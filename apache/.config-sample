@@ -1,0 +1,18 @@
+#
+# Config file for containers
+#
+
+# makeContainer : httpd
+NAME=container_name
+LOCAL_FOLDER=/path/to/your/local/folder
+#CONTAINER=httpd
+CONTAINER=php:7.0-apache
+
+LOCAL_IP=
+LOCAL_PORT=80
+CONTAINER_PORT=80
+CONTAINER_PATH_APP=/var/www
+CONTAINER_PATH_PUBLIC=/var/www/html
+
+DB_SERVER_NAME=db-container-name
+
